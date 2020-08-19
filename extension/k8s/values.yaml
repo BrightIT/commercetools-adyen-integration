@@ -1,0 +1,22 @@
+fullnameOverride: 'ctp-adyen-integration-service-extension'
+
+image:
+  repository: 'commercetools/commercetools-adyen-integration-extension'
+  tag: 'v5.0.0'
+
+service:
+  type: 'NodePort'
+
+ingress:
+  enabled: true
+  annotations:
+    kubernetes.io/ingress.class: 'gce'
+    kubernetes.io/ingress.allow-http: 'false'
+
+livenessProbe:
+  httpGet:
+    path: ''
+
+readinessProbe:
+  httpGet:
+    path: ''
