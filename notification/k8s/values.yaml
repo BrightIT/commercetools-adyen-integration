@@ -1,8 +1,8 @@
 fullnameOverride: 'ctp-adyen-integration-service-notification'
 
 image:
-  repository: 'commercetools/commercetools-adyen-integration-notification'
-  tag: 'v1.0.1'
+  repository: 'eu.gcr.io/professionalserviceslabs/commercetools-adyen-integration-notification'
+  tag: 'v5.0.0'
 
 service:
   type: 'NodePort'
@@ -26,7 +26,7 @@ ingress:
   enabled: true
   annotations:
     kubernetes.io/ingress.class: 'gce'
-    kubernetes.io/ingress.allow-http: 'false'
+    kubernetes.io/ingress.allow-http: 'true'
 
 containerPort: 443
 

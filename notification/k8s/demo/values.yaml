@@ -1,5 +1,5 @@
 nonSensitiveEnvs:
-  CTP_PROJECT_KEY: adyen-integration-demo
+  CTP_PROJECT_KEY: adyen-qa
 
 ingress:
   annotations:
